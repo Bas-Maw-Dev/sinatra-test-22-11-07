@@ -31,12 +31,12 @@ GEM
     tilt (2.0.11)
 
 PLATFORMS
-  universal-darwin-21
+  ruby
 
 DEPENDENCIES
-  rack-test
-  rspec
-  sinatra
+  rack-test (~> 2.0)
+  rspec (~> 3.12)
+  sinatra (~> 3.0)
 
 BUNDLED WITH
-   2.3.23
+   1.17.2
