@@ -19,12 +19,12 @@ RSpec.describe 'Hello Llama App' do
     it "says hello" do
         get '/'
         expect(last_response).to be_ok
-        expect(last_response.body).to include('<h1>Hello world</h1>')
+        expect(last_response.body).to include('<h1>Welcome to the Llama pages</h1>')
     end
 
     it "displays image" do
         get '/llama'
         expect(last_response).to be_ok
-        expect(last_response.body).to eq('<img src=\'https://image.spreadshirtmedia.net/image-server/v1/mp/compositions/T1040A14PA2641PT26X35Y0D157252736FS1885/views/1,width=378,height=378,appearanceId=14,backgroundColor=000000,noPt=true/no-drama-llama-lama-geschenkidee-spruch-trucker-cap.jpg\'/>')
+        expect(last_response.body).to eq('<img src=\'https://4.bp.blogspot.com/-OxdWwnS5WJ4/T65c_Z1hflI/AAAAAAAANL0/MzkD35Cms7k/s400/dalai-lama-laughs.jpeg\'/>')
     end
 end
