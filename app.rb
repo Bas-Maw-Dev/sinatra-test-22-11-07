@@ -4,7 +4,7 @@ require 'sinatra'
 set :port, 5500
 
 get '/' do
-    erb :index
+    erb :govdesign
 end
 
 get '/llama' do
